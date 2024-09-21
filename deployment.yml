@@ -18,7 +18,7 @@ spec:
         app: AeroPulse
     spec:
       containers:
-      - image: thanabodin19/AeroPulse:7
+      - image: thanabodin19/aeropulse:4
         name: AeroPulse
         ports:
         - containerPort: 7860
