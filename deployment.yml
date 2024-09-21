@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  # creationTimestamp: null
+  labels:
+    app: AeroPulse
+  name: AeroPulse
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: AeroPulse
+  strategy: {}
+  template:
+    metadata:
+      # creationTimestamp: null
+      labels:
+        app: AeroPulse
+    spec:
+      containers:
+      - image: thanabodin19/AeroPulse:7
+        name: AeroPulse
+        ports:
+        - containerPort: 7860
+        resources: {}
+status: {}
