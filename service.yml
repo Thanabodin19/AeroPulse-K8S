@@ -8,4 +8,4 @@ spec:
     app: aeropulse
   ports:
   - port: 80
-    targetPort: 8760
+    targetPort: 7860
