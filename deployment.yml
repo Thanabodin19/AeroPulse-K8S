@@ -3,23 +3,23 @@ kind: Deployment
 metadata:
   # creationTimestamp: null
   labels:
-    app: AeroPulse
-  name: AeroPulse
+    app: aeropulse
+  name: aeropulse
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: AeroPulse
+      app: aeropulse
   strategy: {}
   template:
     metadata:
       # creationTimestamp: null
       labels:
-        app: AeroPulse
+        app: aeropulse
     spec:
       containers:
       - image: thanabodin19/aeropulse:9
-        name: AeroPulse
+        name: aeropulse
         ports:
         - containerPort: 7860
         resources: {}
