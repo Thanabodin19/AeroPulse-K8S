@@ -18,7 +18,7 @@ spec:
         app: aeropulse
     spec:
       containers:
-      - image: registry.hf.space/thanabodin-aeropulse-final:latest
+      - image: thanabodin19/aeropulse-mini:26
         name: aeropulse
         ports:
         - containerPort: 7860
